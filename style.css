@@ -1,0 +1,51 @@
+/* Reset dasar */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Plus Jakarta Sans, sans-serif;
+}
+/* Gaya umum */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+/* Gaya header */
+header {
+    background-color: #1D405B;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Gaya navigasi */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    position: relative;
+}
+
+/* Menu Navigasi ditengah*/
+.nav-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+/* logo */
+.logo{
+    height: 40px;
+    width: auto;
+}
