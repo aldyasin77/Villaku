@@ -94,10 +94,66 @@ main{
   margin-right: 32px;
   width: auto;
   height: 45vh;
-  background-image: url('/assets/hero.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* Slider Controls */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.slider-nav:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.slider-nav.prev {
+  left: 20px;
+}
+
+.slider-nav.next {
+  right: 20px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+  background: white;
   border-radius: 16px;
 }
 
