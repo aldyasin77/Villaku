@@ -318,6 +318,453 @@ footer{
   text-decoration: none;
 }
 
+/* ========== Page Hero Styles ========== */
+.page-hero {
+  margin: 0 32px 40px;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%);
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+}
+
+.page-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* ========== About Page Styles ========== */
+.about-content {
+  margin: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.values-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 24px;
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ========== Villas Page Styles ========== */
+.villas-intro {
+  margin: 0 32px 40px;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.villas-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.villas-intro p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.villas-grid {
+  margin: 0 32px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.villa-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.villa-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.villa-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.villa-info {
+  padding: 24px;
+}
+
+.villa-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.villa-info .villa-location {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.villa-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.villa-features {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  background: #e8f4ff;
+  color: #1e90ff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.villa-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+/* ========== FAQ Page Styles ========== */
+.faq-content {
+  margin: 0 32px 40px;
+}
+
+.faq-intro {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq-intro p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 24px;
+  background: white;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question.active {
+  background-color: #e8f4ff;
+  color: #1e90ff;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 24px;
+}
+
+.faq-answer.active {
+  max-height: 500px;
+  padding: 0 24px 24px;
+}
+
+.faq-answer p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ========== Contact Page Styles ========== */
+.contact-container {
+  margin: 0 32px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+}
+
+.contact-info {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  margin-bottom: 2rem;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.info-item p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.contact-form {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e90ff;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #0066cc;
+}
+
+.map-section {
+  margin: 0 32px 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.map-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 400px;
+  background: #f0f0f0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+/* ========== CTA Sections ========== */
+.booking-cta,
+.contact-cta {
+  margin: 40px 32px;
+  background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%);
+  padding: 60px 40px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: white;
+  color: #1e90ff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsif */
 @media (max-width: 768px) {
   main{
@@ -370,5 +817,80 @@ footer{
   .description,
   .footer-link {
     width: 100%;
+  }
+
+  /* Page Hero Responsive */
+  .page-hero {
+    margin: 0 16px 24px;
+    padding: 40px 24px;
+  }
+
+  .page-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero-content p {
+    font-size: 1.2rem;
+  }
+
+  /* About Page Responsive */
+  .about-content {
+    margin: 0 16px;
+    gap: 30px;
+  }
+
+  .about-section,
+  .about-section.reverse {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .about-image {
+    min-width: 100%;
+  }
+
+  .values-section {
+    padding: 40px 24px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Villas Page Responsive */
+  .villas-intro {
+    margin: 0 16px 24px;
+    padding: 40px 24px;
+  }
+
+  .villas-grid {
+    margin: 0 16px 24px;
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Page Responsive */
+  .contact-container {
+    margin: 0 16px 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .map-section {
+    margin: 0 16px 24px;
+    padding: 24px;
+  }
+
+  /* CTA Responsive */
+  .booking-cta,
+  .contact-cta {
+    margin: 24px 16px;
+    padding: 40px 24px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
   }
 }
