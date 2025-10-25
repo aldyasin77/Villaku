@@ -1,9 +1,9 @@
 // Slider functionality
 const heroSlider = {
     images: [
-        '/assets/hero.png',
-        '/assets/hidden_gem.png',
-        '/assets/sunset.png'
+        'assets/hero.png',
+        'assets/hidden_gem.png',
+        'assets/sunset.png'
         
     ],
     currentIndex: 0,
@@ -73,11 +73,11 @@ const logoTicker = {
         
         // Logo data
         const logos = [
-            { src: '/assets/logo partner/agoda.svg', alt: 'agoda' },
-            { src: '/assets/logo partner/airbnb.svg', alt: 'airbnb' },
-            { src: '/assets/logo partner/bookingcom.svg', alt: 'bookingcom' },
-            { src: '/assets/logo partner/tiketcom.svg', alt: 'tiketcom' },
-            { src: '/assets/logo partner/trivago.svg', alt: 'trivago' }
+            { src: 'assets/logo partner/agoda.svg', alt: 'agoda' },
+            { src: 'assets/logo partner/airbnb.svg', alt: 'airbnb' },
+            { src: 'assets/logo partner/bookingcom.svg', alt: 'bookingcom' },
+            { src: 'assets/logo partner/tiketcom.svg', alt: 'tiketcom' },
+            { src: 'assets/logo partner/trivago.svg', alt: 'trivago' }
         ];
         
         // Create logo elements dynamically
